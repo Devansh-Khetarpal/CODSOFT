@@ -1,0 +1,163 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-image: url("Pictures/back.jpg");
+        }
+
+        main {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            margin: 0 0;
+        }
+
+        .title {
+            font-size: 50px;
+            font-weight: bold;
+            padding: 1.5% 0;
+        }
+
+        .title-info {
+            padding-bottom: 2%;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            padding: 2%;
+        }
+
+        .input-group,
+        .textarea-group {
+            padding: 1% 0;
+        }
+
+        input,
+        textarea {
+            color: inherit;
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #010101;
+            padding: 1.5%;
+            font-size: 20px;
+        }
+
+        input:focus,
+        textarea:focus {
+            background-color: transparent;
+            outline: transparent;
+            border-bottom: 2px solid black;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: transparent;
+        }
+
+        label {
+            color: black;
+            position: relative;
+            left: 0.5em;
+            top: -2em;
+            cursor: auto;
+            transition: 0.3s ease all;
+        }
+
+        input:focus~label,
+        input:not(:placeholder-shown)~label {
+            top: -4em;
+            color: white;
+            font-size: 15px;
+        }
+
+        textarea:focus~label,
+        textarea:not(:placeholder-shown)~label {
+            top: -10.5em;
+            color: white;
+            font-size: 15px;
+        }
+
+        .button-div {
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+
+        button {
+            padding: 2%;
+            width: 50%;
+            border: 1px solid;
+            border-color: #212121;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 15px;
+            font-size: 18px;
+            background-color: black;
+            color: inherit;
+            box-shadow: 0 0 10px #212121;
+        }
+
+        button:hover {
+            background-color: #424242;
+            color: white;
+            cursor: pointer;
+        }
+
+        button {
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" style="background-color: black;margin: 0 0;">
+        <div class="account" style="margin-left: 20px;">
+            <img src="Pictures/devansh.jpg" alt="Devansh" style="height: 50px;width: 65px;border: 5px solid black;">
+            <a href="https://github.com/Devansh-Khetarpal" target="_blank"><img class="social-media-img"
+                    src="Pictures/github.png" alt="GitHub" style="height: 43px;width: 53px; margin-left: 70%;margin-bottom: 6px;"></a>
+            <a href="https://www.instagram.com/devansh_khetarpal/"><img class="social-media-img"
+                    src="Pictures/insta.jpg" alt="Instagram" style="height: 43px;width: 53px;margin-left: 15px;margin-bottom: 6px;"></a>
+            <a href="https://www.linkedin.com/in/devansh-khetarpal-9a8459244/" target="_blank"><img class="social-media-img"
+                    src="Pictures/linkedin.png" alt="LinkedIn" style="height: 43px;width: 53px; margin-left:15px;margin-bottom: 6px;"></a>
+        </div>
+    </nav>
+    <hr style="border:3px solid black;">
+    <main>
+        <div class="title">Contact us</div>
+        <div class="title-info">We'll get back to you soon!</div>
+
+        <form action="" method="" class="form" onsubmit="sendEmail();reset();return false">
+            <div class="input-group">
+                <input type="text" name="first_name" id="first-name" placeholder="First name">
+                <label for="first-name">First name</label>
+            </div>
+
+            <div class="input-group">
+                <input type="text" name="last_name" id="last-name" placeholder="Last Name">
+                <label for="last-name">Last name</label>
+            </div>
+
+            <div class="input-group">
+                <input type="email" name="e-mail" id="e-mail" placeholder="e-mail">
+                <label for="e-mail">e-mail</label>
+            </div>
+
+            <div class="textarea-group">
+                <textarea name="message" id="message" rows="5" placeholder="Message"></textarea>
+                <label for="message">Message</label>
+            </div>
+
+            <div class="button-div">
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,302 @@
+<html>
+
+<head>
+    <title>
+        Developer Portfolio
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+            color: aliceblue;
+            font-family: poppins,sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(9, 207, 88);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        .left{
+            font-size: 1.5rem;
+            color: white;
+            border: 2px solid black;
+            padding: 6px 6px;
+        }
+        .firstSection div{
+            width: 35%;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin:30px 0;
+            align-items: center;
+        }
+        .left-section{
+            font-size: 2.85rem;
+        }
+        .left-section .buttons{
+            display: flex;
+            width: 70%;
+            padding:50px 0;
+        }
+        .left-section .btn{
+            margin: 0 10px;
+            font-size: 14px;
+            padding: 10px;
+            background:#5fca50;
+            color: #000000;
+            border: 2px solid black;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .right-section img{
+            width: 72%;
+            margin: 20px 0px;
+        }
+        .green{
+            color: rgb(9, 207, 88);
+        }
+        nav ul li a{
+            text-decoration: none;
+            color:white;
+        }
+        nav ul li a:hover{
+            color: rgb(0, 2, 1);
+            font-size: 1.4rem;
+        }
+        #element{
+            color: rgb(9, 207, 88);
+        }
+        .secondSection{
+            max-width: 80vb;
+            margin-left:7%;
+            height: 80vh;
+        }
+        main hr{
+            border: 0;
+            height: 1.2px;
+            background-color: rgb(9, 207, 88);
+            margin:30px 80px;
+        }
+        .secondSection h1{
+            font-size: 1.9rem;
+        }
+        .text-grey{
+            color: gray;
+        }
+        .secondSection .box{
+            background-color: white;
+            width:80vw;
+            height: 2px;
+            margin: 70px 0px;
+            display: flex;
+        }
+        .secondSection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 205px;
+        }
+        .image-top{
+            width:50px;
+            position: relative;
+            top: -38px;
+            left: -9px;
+        }
+        .vertical-title{
+            position:relative;
+            top:75px;
+            width:150px;
+            color: rgb(9, 207, 88);
+        }
+        .vertical-desc{
+            color: grey;
+            position: relative;
+            width: 150px;
+            top:90px;
+            font-size:12px;
+        }
+        footer{
+            background-color:  rgb(9, 207, 88);
+        }
+        .footer{
+            display: flex;
+            justify-content: space-evenly;
+            color: black;
+        }
+        .footer ul{
+            list-style: none;
+        }
+        .footer-rights{
+            text-align: center;
+            color:white;
+        }
+
+
+        .btnss {   
+         font-size: 1rem;      
+         background-color: rgb(9, 207, 88);
+         cursor: pointer;
+         border: none;
+        }
+        .dropdown {
+         width: 250px;
+         background: white;
+        }
+        .dropdown a {
+         display: flex;
+         align-items: center;
+         padding: 0.5rem 1rem;
+         text-decoration: none;
+         color: black;
+        }
+        .dropdown a:hover {
+          color: rgb(161, 191, 55);
+        }
+        .dropdown {
+          position: absolute;
+          width: 300px;
+          margin-top: 0.3rem;
+          background: white;
+          transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+          transform: translateY(0.5rem);
+          visibility: hidden;
+
+        }
+        .show {
+          transform: translateY(0rem);
+          visibility: visible;
+          opacity: 1.5;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><b>Devansh's Portfolio</b></div>
+            <div class="right">
+                <ul>
+                    <li><a href="intro.html">About</a></li>
+                    <li>
+                        <a><button class="btnss" id="btn">
+                            <b>Projects</b></a>
+                          </button><div class="dropdown" id="dropdown">
+                        <a href="https://devansh-khetarpal.github.io/Flora-And-Fauna-In-Uttarakhand/flora%20and%20fauna.html">
+                          <i class="bx bx-plus-circle"></i>
+                          FLORA AND FAUNA IN UTTARAKHAND WEBSITE
+                        </a>
+                        <a href="https://devansh-khetarpal.github.io/Web-Music-Player/music%20player.html">
+                          <i class="bx bx-book"></i>
+                          WEB-MUSIC-PLAYER
+                        </a>
+                        <a href="https://github.com/Devansh-Khetarpal/Voice_Controlled_AI_Bot">
+                          <i class="bx bx-folder"></i>
+                          VOICE-CONTROLLED-AI-BOT
+                        </a>
+                        <a href="https://github.com/Devansh-Khetarpal/Automation_OF_Emails_Python_Project">
+                            <i class="bx bx-folder"></i>
+                            AUTOMATION OF EMAIL SENDING
+                          </a>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                          
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="left-section">Hi,my name is <span class="green">Devansh</span> and i am a passionate <span id="element"></span>
+                 <div class="buttons">
+                    <a href="Devansh Resume.pdf" target="_blank" style="text-decoration: none; color: rgb(18,18,62);">
+                        <button class="btn" style="margin-left: 0px;"><b>DOWNLOAD RESUME</b></button>
+                    </a>
+                    <a href="https://github.com/Devansh-Khetarpal" target="_blank" style="text-decoration: none; color: rgb(18,18,62);">
+                        <button class="btn"><b>VISIT GITHUB PROFILE</b></button>
+                    </a>
+                 </div>
+            </div>
+
+            <div class="right-section"><img src="Pictures/1.jpg"></div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-grey">what i have done so far</span>
+            <h1>PROJECTS</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="Pictures/2.PNG">
+                    <div class="vertical-title">FULL-STACK WEB DEVELOPMENT</div>
+                    <div class="vertical-desc">I have worked on many projects related to full-stack web development where i have created a website describing Flora And Fauna In Uttarakhand.<br><a class="green" href="https://devansh-khetarpal.github.io/Flora-And-Fauna-In-Uttarakhand/flora%20and%20fauna.html">FLORA AND FAUNA IN UTTARAKHAND</a></div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="Pictures/3.PNG" style="height: 33px;left: -15px;width: 55;">
+                    <div class="vertical-title">VOICE-CONTROLLED-AI-BOT</div>
+                    <div class="vertical-desc">I have worked on a ML based project which handles actions like opening websites, playing local music, and even logging into Instagram, making it a convenient hands-free solution. .<br><a class="green" href="https://github.com/Devansh-Khetarpal/Voice_Controlled_AI_Bot" >Voice-Assistant</a></div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="Pictures/4.PNG" style="height: 33px;left: -15px;width: 55;">
+                    <div class="vertical-title">AUTOMATION OF EMAIL SENDING USING PYTHON</div>
+                    <div class="vertical-desc">I developed a Mail Sender with which one can send an email through either text or speech(voice command) to anyone without using gmail .<br><a class="green" href="https://github.com/Devansh-Khetarpal/Automation_OF_Emails_Python_Project">AUTOMATED EMAIL SENDER</a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+    <div class="footer">
+        <div class="first-footer">
+            <h3>Devansh's Portfolio</h3>
+        </div>
+        
+    </div>
+    <div class="footer-rights">Copyright &#169;Devansh portfolio |All rights reserved</div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Software Engineer'],
+          typeSpeed: 35,
+        });
+
+
+        const dropdownBtn = document.getElementById("btn");
+        const dropdownMenu = document.getElementById("dropdown");
+        const toggleDropdown = function () {
+        dropdownMenu.classList.toggle("show");};
+        dropdownBtn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        toggleDropdown();
+    });
+    </script>
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+       $(document).ready(function(){
+           $("a").click(function(){
+               $("a").toggleClass("active")
+           })
+       })
+    </script>
+</body>
+
+</html>
